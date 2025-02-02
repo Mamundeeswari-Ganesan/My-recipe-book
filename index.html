@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Recipe Book</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+  <div id='title-logo'>
+    <h1>My Recipe Book</h1>
+    <span><img id='logo' height='70' width='70' src="https://clipart.com/thumbs.php?f=/081/batch_02/ciconrecipe_tnb.png" alt=' recipebook' /></span>
+  </div>
+  <div><label>Search </label>
+    <input id='search' type='text' placeholder="Search recipes...">
+
+  </div>
+  <div id='recipes'>
+    <div class='add-recipe' id='add-recipe'>
+      <span class="recipe-close" id='dis'>&times;</span>
+      <div class='recipe' id='add-recipe'>
+        <p>Add Recipe</p>
+        <button id='add-recipe-button'><img width='30px' height='30px' src="https://img.icons8.com/?size=100&id=1501&format=png&color=6D2323" alt='plus' /></button>
+
+      </div>
+    </div>
+    <div class='recipe-div'>
+      <span class="recipe-close">&times;</span>
+      <div class='recipe' data-index="0">
+        <p>Pancake</p>
+        <img width='60px' height='60px' src='https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='pancake' />
+      </div>
+    </div>
+    <div>
+      <div class='recipe-div'>
+        <span class="recipe-close">&times;</span>
+        <div class='recipe' data-index="1">
+          <p>Fish Salad</p>
+          <img width='60px' height='60px' src='https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=600' alt='fishsalad' />
+        </div>
+      </div>
+    </div>
+    <div class='recipe-div'>
+      <span class="recipe-close">&times;</span>
+      <div class='recipe' data-index="2">
+        <p>Channa Masala</p>
+        <img width='60px' height='60px' src='https://images.pexels.com/photos/2679501/pexels-photo-2679501.jpeg?auto=compress&cs=tinysrgb&w=600' alt='channamasala' />
+      </div>
+    </div>
+    <div class='recipe-div'>
+      <span class="recipe-close">&times;</span>
+      <div class='recipe' data-index="3">
+        <p>Carrot Soup</p>
+        <img width='60px' height='60px' src='https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=600' alt='carrotsoup' />
+      </div>
+    </div>
+    <div class='recipe-div'>
+      <span class="recipe-close">&times;</span>
+      <div class='recipe' data-index="4">
+        <p>Creamy Pasta</p>
+        <img width='60px' height='60px' src='https://images.pexels.com/photos/803963/pexels-photo-803963.jpeg?auto=compress&cs=tinysrgb&w=600' alt='creamypasta' />
+      </div>
+    </div>
+    <div class='recipe-div'>
+      <span class="recipe-close">&times;</span>
+      <div class='recipe' data-index="5">
+        <p>Milkshake</p>
+        <img width='60px' height='60px' src='https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=600 alt=' milkshake' />
+      </div>
+    </div>
+  </div>
+
+  <div id="modal">
+    <div id="modal-content">
+      <span id="close">&times;</span>
+      <h2 id="recipe-title"></h2>
+      <h3>Ingredients</h3>
+      <ul id="ingredients"></ul>
+      <h3>Preparation</h3>
+      <ol id="preparation"></ol>
+    </div>
+  </div>
+
+  <div id='form-modal'>
+    <div id='form'>
+      <div class='gap'>
+        <span id='form-close'>&times;</span>
+      </div>
+      <h1 id='form-title'>Add new recipe</h1>
+      <div class='gap'>
+        <label for='form-title-text' id='form-title'>Title: </label>
+        <input type='text' id='form-title-text' />
+      </div>
+      <div class='gap'>
+        <label id='form-url' for='form-url-text'> URL for the image: </label>
+        <input type='text' id='form-url-text' />
+      </div>
+      <div class='gap'>
+        <label id='form-ingredients' for='form-ingredients-text'>Ingredients: (Use comma to separate) </label>
+        <input type='text' id='form-ingredients-text' />
+      </div>
+      <div class='gap'>
+        <label id='form-title' for='form-preparation -text'>Preparation: (Use comma to separate)</label>
+        <input type='text' id='form-preparation-text' />
+      </div>
+      <div>
+        <button id='submit'>Submit</button>
+        <button id='reset'>Reset</button>
+      </div>
+    </div>
+  </div>
+  <script src="recipe.js"></script>
+</body>
+
+</html>
